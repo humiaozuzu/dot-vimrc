@@ -1,0 +1,22 @@
+### /Users/maple/.gitignore-boilerplates/Global/OSX.gitignore
+
+.DS_Store
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+### /Users/maple/.gitignore-boilerplates/Global/vim.gitignore
+
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+
+# bundles installed should be ignored
+bundle
