@@ -224,3 +224,4 @@ Other configurations are also well organized in vimrc.
 
 * Compeletions are not well supported for statically typed languages(c/c++)
 * Snippets are not shown in completions popups
+* May has some conflicts with GVIM

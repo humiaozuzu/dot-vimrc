@@ -211,9 +211,9 @@ nnoremap <c-l> <c-w>l
 :command QA qa
 
 " for macvim
-if has("gui_macvim")
+if has("gui_running")
     set go=aAce  " remove toolbar
-    set transparency=30
+    "set transparency=30
     set guifont=Monaco:h13
     set showtabline=2
     set columns=140
