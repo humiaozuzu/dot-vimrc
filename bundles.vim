@@ -62,7 +62,7 @@ Bundle 'nvie/vim-togglemouse'
 Bundle '2072/PHP-Indenting-for-VIm'
 "Bundle 'tpope/vim-rails'
 Bundle 'beyondwords/vim-jinja2'
-Bundle 'digitaltoad/vim-jade'
+"Bundle 'digitaltoad/vim-jade'
 
 " web front end
 Bundle 'othree/html5.vim'
@@ -81,7 +81,7 @@ Bundle 'tpope/vim-markdown'
 
 " Scheme
 Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'wlangstroth/vim-racket'
+"Bundle 'wlangstroth/vim-racket'
 
 "--------------
 " Color Scheme
