@@ -198,7 +198,7 @@ __via curl__
 
 1. Get the required things ready.
 
-	curl -L https://github.com/jhezjkp/dot-vimrc/raw/master/tools/install.sh | sh
+		curl -L https://github.com/jhezjkp/dot-vimrc/raw/master/tools/install.sh | sh
 
 2. Install bundles. Launch vim(ignore the errors and they will disappear after installing needed plugins)and run:
 		
@@ -208,7 +208,7 @@ __via wget__
 
 1. Get the required things ready.
 	
-	wget --no-check-certificate https://github.com/jhezjkp/dot-vimrc/raw/master/tools/install.sh -O - | sh
+		wget --no-check-certificate https://github.com/jhezjkp/dot-vimrc/raw/master/tools/install.sh -O - | sh
 	
 2. Install bundles. Launch vim(ignore the errors and they will disappear after installing needed plugins)and run:
 		

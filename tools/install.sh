@@ -24,7 +24,7 @@ then
   rm ~/.vimrc;
 fi
 
-echo "\033[0;34mlink .vimrc to ~/.vim/vimrc\033[0m"
+echo "\033[0;34mlink ~/.vimrc to ~/.vim/vimrc\033[0m"
 ln -s ~/.vim/vimrc ~/.vimrc
 
 echo "\nYour vim is now configured!\nPlease open vim and run \"\033[44;37m:BundleInstall\033[0m\" command to finish the vim plugins installation.\033[0m"
