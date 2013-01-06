@@ -16,7 +16,7 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'ervandew/supertab'
 Bundle 'honza/snipmate-snippets'
 Bundle 'mattn/zencoding-vim'
-" snipmate dependencies
+"------ snipmate dependencies -------
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 
@@ -33,7 +33,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'sjl/gundo.vim'
 Bundle 'Raimondi/delimitMate'
-"Bundle 'kana/vim-smartinput'
 Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
 
@@ -41,9 +40,8 @@ Bundle 'nathanaelkane/vim-indent-guides'
 " IDE features
 "--------------
 Bundle 'scrooloose/nerdtree'
-Bundle 'majutsushi/tagbar'
 Bundle 'humiaozuzu/TabBar'
-"Bundle 'kien/tabman.vim'
+Bundle 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
@@ -54,7 +52,7 @@ Bundle 'bronson/vim-trailing-whitespace'
 "-------------
 " Other Utils
 "-------------
-Bundle 'humiaozuzu/fcitx-status'
+" Bundle 'humiaozuzu/fcitx-status'
 Bundle 'nvie/vim-togglemouse'
 
 "----------------------------------------
