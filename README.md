@@ -1,18 +1,17 @@
 Maple's Vim config
 ==================
 
-I use `vundle` to manage my plugins, which makes my `.vim` directory clean
-and tidy. If you are new to vim, the following two posts
+I use `vundle` to manage my plugins, which makes my `.vim` directory clean and tidy. If you are new to vim, the following two posts
 
 * [Vim Introduction and Tutorial](http://blog.interlinked.org/tutorials/vim_tutorial.html)
-* [Vim plugins I use](http://mirnazim.org/writings/vim-plugins-i-use/) 
+* [Vim plugins I use](http://mirnazim.org/writings/vim-plugins-i-use/)
 
 will be good for you.
 
 #### Most of the time we are writing code so we need:
 ## Code Completions
 
-Such as completions for variable names and function names(neocomplcache), expanding snippets(snipMate), auto closing brackets/brace/quote(vim-smartinput) and fast expand expressions to HTML(ZenCoding).
+Such as completions for variable names and function names(neocomplcache), expanding snippets(snipMate), auto closing brackets/brace/quote(delimitMate) and fast expand expressions to HTML(ZenCoding).
 
 * [neocomplcache](http://github.com/Shougo/neocomplcache) - Ultimate auto completion system for Vim.
 * [snipMate](https://github.com/garbas/vim-snipmate) - Plugin for using TextMate-style snippets in Vim.
@@ -22,7 +21,7 @@ Such as completions for variable names and function names(neocomplcache), expand
 
 ### Shortcuts
 
-* `Tab`  -> Rotate across the completion list
+* `Tab` -> Rotate across the completion list
 * `Tab` -> Expand snippets or jump to the next placeholder of snippet
 * `Ctrl` + `j` -> Call zen-coding expansion on html tags
 
@@ -62,6 +61,7 @@ sudo apt-get install vim-gtk               # Ubuntu
 ```
 
 ### Shortcuts
+
 * `%` -> Jump between brackets and html/xml tags
 * `<leader>` + `w` -> Beginning of the word.
 * `<leader>` + `f` + `{char}` -> Find {char} to the right.
@@ -88,7 +88,7 @@ sudo apt-get install vim-gtk               # Ubuntu
 * `%` -> Jump between brackets and html/xml tags
 * `<leader>` + `c` + `<space>` -> Toggle comment
 * `F3` -> Toggle Gundo viewer
-* `F4` -> Toggle Indent Guides 
+* `F4` -> Toggle Indent Guides
 
 ## IDE features
 
@@ -123,7 +123,7 @@ Haml         | haml          | built-in
 Haskell      | ghc-mod       | `cabal install ghc-mod`
 HTML         | tidy          | built-in
 Java         | javac         | built-in
-Javascript   | jslint/jshint | `npm install -g jslint/jshint`
+Javascript   | jshint        | `npm install -g jshint`
 Json         | jsonlint      | `npm install -g jsonlint`
 Less         | lessc         | built-in
 Lisp         | clisp         | built-in
@@ -131,7 +131,7 @@ Lua          | luac          | built-in
 Perl         | perl          | built-in
 PHP          | php           | built-in
 Puppet       | puppet        | built-in
-Python       | pylint/pyflakes/flake8 | `sudo pip install pylint/pyflakes/flake8`
+Python       | pyflakes      | `sudo pip install pyflakes`
 Ruby         | ruby          | built-in
 Scala        | scala         | built-in
 Sass         | sass          | built-in
@@ -163,12 +163,28 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 
 ## Better syntax/indent for language enhancement
 
-* [markdown](http://github.com/tpope/vim-markdown) -  Syntax highlight for Markdown text files.
-* [jquery](http://github.com/nono/jquery.vim) - Syntax file for jQuery in ViM.
-* [javascript](http://github.com/pangloss/vim-javascript) - Vastly improved vim's javascript indentation.
-* [coffee-script](https://github.com/kchmck/vim-coffee-script) - CoffeeScript support for vim.
-* [html5](https://github.com/othree/html5.vim) - HTML5 omnicomplete and syntax.
-* [haml](https://github.com/tpope/vim-haml) - Vim runtime files for Haml, Sass, and SCSS.
+- Server
+   - php
+   - rails
+   - jinja
+   - jade
+- Web
+   - html5
+   - haml
+   - javascript
+   - jquery
+   - coffeescript
+   - less
+   - stylus
+   - handlebar
+- Markuo language
+   - markdown
+   - textile
+- FPs
+   - racket
+   - clojure
+   - scale
+  
 
 ## Themes
 
@@ -177,6 +193,9 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 * [solarized](https://github.com/altercation/vim-colors-solarized) - precision colorscheme for the vim text editor
 * [vividchalk](https://github.com/tpope/vim-vividchalk) - colorscheme based on the Vibrant Ink theme for TextMate
 * [distinguished](https://github.com/Lokaltog/vim-distinguished) - A dark vim color scheme for 256-color terminals.
+* [tomorrow](https://github.com/chriskempson/vim-tomorrow-theme) - Tomorrow Theme for Vim
+* [fisa](https://github.com/fisadev/fisa-vim-colorscheme) - soft color scheme for terminals with 256 colors
+Clone in Mac
 
 ## Additional functions
 
@@ -184,8 +203,9 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 * Hightlight current line and column
 * Automatically jump to the last edited location
 * `:w`/`:wq` error correction
-* Remove trailing white space
+* Remove trailing white space(run `:FixWhitespace` in vim)
 * Code folding is disabled, enable it as you wish
+* `w!!` to write if you forget add sudo
 * Indent style:
    * JavaScript - Use soft-tabs with a two space indent(According to this [Post](http://atroche.org/post/30994290348/javascript-indentation)).
    * HTML/CSS - Use soft-tabs with a two space indent(According to Google and Github's HTML/CSS style guide, just Google it).
@@ -203,13 +223,13 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 
         git clone git://github.com/humiaozuzu/dot-vimrc.git ~/.vim
         ln -s ~/.vim/vimrc ~/.vimrc
-        
+
 3. Setup `Vundle`:
 
         git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 4. Install bundles. Launch vim(ignore the errors and they will disappear after installing needed plugins)and run:
-		
+
         :BundleInstall
 
 Thst's it!
