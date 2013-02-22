@@ -61,7 +61,7 @@ Bundle 'nvie/vim-togglemouse'
 "------- web backend ---------
 Bundle '2072/PHP-Indenting-for-VIm'
 "Bundle 'tpope/vim-rails'
-Bundle 'beyondwords/vim-jinja2'
+Bundle 'lepture/vim-jinja'
 "Bundle 'digitaltoad/vim-jade'
 
 "------- web frontend ----------
@@ -80,6 +80,9 @@ Bundle 'tpope/vim-markdown'
 
 "------- Ruby --------
 " Bundle 'tpope/vim-endwise'
+
+"------- Go ----------
+Bundle 'jnwhiteh/vim-golang'
 
 "------- FPs ------
 Bundle 'kien/rainbow_parentheses.vim'
