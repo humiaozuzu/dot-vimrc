@@ -12,7 +12,7 @@ Bundle 'gmarik/vundle'
 " Code Completions
 "------------------
 Bundle 'Shougo/neocomplcache'
-Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
 Bundle 'ervandew/supertab'
 Bundle 'honza/snipmate-snippets'
 Bundle 'mattn/zencoding-vim'
