@@ -235,7 +235,7 @@ Clone in Mac
 
 Thst's it!
 
-For installation on Windows, please refer to this post: http://yoxyue.com/2012/10/17/gVIM-on-win7/ (Thanks to [yoxyue](https://github.com/yoxyue))
+For installation on Windows, please refer to this post: http://blog.yoxyue.com/post/gvim-on-win7 (Thanks to [yoxyue](https://github.com/yoxyue))
 
 ## How to manage this vimrc?
 
