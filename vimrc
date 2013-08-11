@@ -237,7 +237,12 @@ nnoremap ; :
 if has("gui_running")
     set go=aAce  " remove toolbar
     "set transparency=30
-    set guifont=Monaco:h13
+    if has("gui_gtk2")
+        set guifont=Monaco\ 13
+    elseif has("gui_win32")
+        set guifont=Monaco:h13
+    elseif has("gui_mac")
+        set guifont=Monaco:h13
     set showtabline=2
     set columns=140
     set lines=40
