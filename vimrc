@@ -14,7 +14,7 @@ syntax on
 "--------
 " color scheme
 set background=dark
-color vividchalk
+color solarized
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -181,6 +181,10 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType c setlocal omnifunc=ccomplete#Complete
+if !exists('g:neocomplcache_omni_patterns')
+  let g:neocomplcache_omni_patterns = {}
+endif
+let g:neocomplcache_omni_patterns.erlang = '[a-zA-Z]\|:'
 
 " SuperTab
 "let g:SuperTabDefultCompletionType='context'
@@ -192,6 +196,8 @@ set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_S
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 " Keybindings for plugin toggle
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
 nmap <F5> :TagbarToggle<cr>
 nmap <F6> :NERDTreeToggle<cr>
 nmap <F3> :GundoToggle<cr>
@@ -218,11 +224,18 @@ autocmd BufReadPost *
       \ endif
 
 " w!! to sudo & write a file
-cmap w!! w !sudo tee >/dev/null %
+cmap w!! %!sudo tee >/dev/null %
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+" sublime key bindings
+nmap <D-]> >>
+nmap <D-[> <<
+vmap <D-[> <gv
+vmap <D-]> >gv
+
 
 " eggcache vim
 nnoremap ; :
