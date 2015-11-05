@@ -15,6 +15,7 @@ syntax on
 " color scheme
 set background=dark
 color solarized
+colorscheme Tomorrow-Night-Eighties
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -34,7 +35,7 @@ set nofoldenable                                                  " disable fold
 set confirm                                                       " prompt when existing from an unsaved file
 set backspace=indent,eol,start                                    " More powerful backspacing
 set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
-set mouse=a                                                       " use mouse in all modes
+" set mouse=a                                                       " use mouse in all modes
 set report=0                                                      " always report number of lines changed                "
 set nowrap                                                        " dont wrap lines
 set scrolloff=5                                                   " 5 lines above/below cursor when scrolling
@@ -194,6 +195,9 @@ let g:SuperTabRetainCompletionType=2
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_cmd = 'CtrlPMixed'
+
 
 " Keybindings for plugin toggle
 nnoremap <F2> :set invpaste paste?<CR>
