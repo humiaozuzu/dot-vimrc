@@ -236,6 +236,11 @@ nmap <D-[> <<
 vmap <D-[> <gv
 vmap <D-]> >gv
 
+" access system clipboard
+nmap <C-V> "+P
+imap <C-V> <ESC><C-V>i
+vmap <C-C> "+y
+
 " eggcache vim
 nnoremap ; :
 :command W w
